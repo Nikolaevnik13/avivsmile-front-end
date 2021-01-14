@@ -1,9 +1,258 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="d0567cc5-bc2e-4508-8e4c-b7d73c250644" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Button.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Card.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Cards.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Choice.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Menu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/admins_components/AdminFooter.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/admins_components/AdminFrame.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/admins_components/AdminMenu.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/admins_components/AdminSwitcher.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/AllRecordsByDay.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/FrameTable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/FrameTablesReports.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/ReportsPerEmployee.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/ReportsSwitcher.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/TableRow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/TablesRowForReports.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/reportsPages/FrameRecordTable.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/reportsPages/OvertimeHours.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/reportsPages/TableRecordRow.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/reportsPages/WorkDays.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/reportsPages/WorkHours.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/admins_components/forms/FormAddEmployee.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/admins_components/forms/FormAddRoleEmployee.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/admins_components/forms/FormDeleteEmployee.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/admins_components/forms/FormDeleteRoleEmployee.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/admins_components/forms/FormEditEmployee.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/components.module.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/h.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/logoaviv.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/logoaviv2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/actions/appAction.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/actions/manageEmployeeAction.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/actions/tableAction.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/actions/userAction.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/reducers/appReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/reducers/rootReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/reducers/tableReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/redux/reducers/userReducer.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/configuration.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/utils/util.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="CSS File" />
+        <option value="TypeScript File" />
+        <option value="JavaScript File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="JsFlowSettings">
+    <service-enabled>true</service-enabled>
+    <exe-path />
+    <other-services-enabled>true</other-services-enabled>
+    <auto-save>true</auto-save>
+  </component>
   <component name="ProjectId" id="1leG5w7CSALMLKblQGqf3L4cZm6" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+    <option name="showMembers" value="true" />
+  </component>
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/images" />
+    <property name="list.type.of.created.stylesheet" value="CSS" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.standard" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.standard" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path" value="node" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components/admins_components/forms" />
+      <recent name="$PROJECT_DIR$/src/components/admins_components" />
+      <recent name="$PROJECT_DIR$/src/images" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/images" />
+    </key>
+  </component>
+  <component name="RunManager" selected="npm.npm start">
+    <configuration name="Debug Application" type="JavascriptDebugType" uri="http://localhost:3000">
+      <method v="2" />
+    </configuration>
+    <configuration name="npm start" type="js.build_tools.npm">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="start" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="d0567cc5-bc2e-4508-8e4c-b7d73c250644" name="Default Changelist" comment="" />
+      <created>1607949963310</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1607949963310</updated>
+      <workItem from="1607949968684" duration="992000" />
+      <workItem from="1608117055046" duration="33000" />
+      <workItem from="1608117142890" duration="65000" />
+      <workItem from="1608117262254" duration="1699000" />
+      <workItem from="1608119456217" duration="395000" />
+      <workItem from="1608119964721" duration="3185000" />
+      <workItem from="1608123492489" duration="5743000" />
+      <workItem from="1608144025057" duration="2298000" />
+      <workItem from="1608146878121" duration="9000" />
+      <workItem from="1608199330693" duration="2335000" />
+      <workItem from="1608467541989" duration="581000" />
+      <workItem from="1608468248378" duration="60000" />
+      <workItem from="1608468662393" duration="8849000" />
+      <workItem from="1608646697931" duration="30103000" />
+      <workItem from="1608893744027" duration="28984000" />
+      <workItem from="1609061228330" duration="3089000" />
+      <workItem from="1609076962103" duration="42325000" />
+      <workItem from="1609406753788" duration="25884000" />
+      <workItem from="1609927603192" duration="6612000" />
+      <workItem from="1610107960921" duration="33311000" />
+      <workItem from="1610285688007" duration="11355000" />
+      <workItem from="1610354700063" duration="43005000" />
+      <workItem from="1610550837581" duration="4239000" />
+      <workItem from="1610614120299" duration="7976000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="217" y="225" key="#ESLint" timestamp="1608830969637">
+      <screen x="0" y="23" width="2048" height="1073" />
+    </state>
+    <state x="217" y="224" key="#ESLint/0.23.2048.1067@0.23.2048.1067" timestamp="1608125671835" />
+    <state x="217" y="225" key="#ESLint/0.23.2048.1073@0.23.2048.1073" timestamp="1608830969637" />
+    <state x="324" y="367" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608117423556">
+      <screen x="0" y="23" width="2048" height="1068" />
+    </state>
+    <state x="324" y="367" key="#com.intellij.fileTypes.FileTypeChooser/0.23.2048.1068@0.23.2048.1068" timestamp="1608117423556" />
+    <state x="355" y="313" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1609416683401">
+      <screen x="0" y="23" width="2048" height="1074" />
+    </state>
+    <state x="355" y="311" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.2048.1067@0.23.2048.1067" timestamp="1608121623669" />
+    <state x="355" y="313" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.2048.1074@0.23.2048.1074" timestamp="1609416683401" />
+    <state x="503" y="460" width="663" height="190" key="Github.ShareDialog" timestamp="1610550875528">
+      <screen x="0" y="23" width="2048" height="1067" />
+    </state>
+    <state x="503" y="460" width="663" height="190" key="Github.ShareDialog/0.23.2048.1067@0.23.2048.1067" timestamp="1610550875528" />
+    <state width="1256" height="166" key="GridCell.Tab.0.bottom" timestamp="1610565308333">
+      <screen x="0" y="23" width="2048" height="1074" />
+    </state>
+    <state width="1044" height="166" key="GridCell.Tab.0.bottom/0.23.2048.1066@0.23.2048.1066" timestamp="1609261053719" />
+    <state width="1139" height="166" key="GridCell.Tab.0.bottom/0.23.2048.1067@0.23.2048.1067" timestamp="1608903760122" />
+    <state width="1256" height="166" key="GridCell.Tab.0.bottom/0.23.2048.1068@0.23.2048.1068" timestamp="1610549498235" />
+    <state width="1256" height="166" key="GridCell.Tab.0.bottom/0.23.2048.1073@0.23.2048.1073" timestamp="1610472296745" />
+    <state width="1256" height="166" key="GridCell.Tab.0.bottom/0.23.2048.1074@0.23.2048.1074" timestamp="1610565308333" />
+    <state width="1219" height="166" key="GridCell.Tab.0.bottom/0.23.2048.1075@0.23.2048.1075" timestamp="1610287947430" />
+    <state width="1219" height="166" key="GridCell.Tab.0.bottom/0.23.2048.1076@0.23.2048.1076" timestamp="1610279864749" />
+    <state width="1256" height="166" key="GridCell.Tab.0.center" timestamp="1610565308332">
+      <screen x="0" y="23" width="2048" height="1074" />
+    </state>
+    <state width="1044" height="166" key="GridCell.Tab.0.center/0.23.2048.1066@0.23.2048.1066" timestamp="1609261053718" />
+    <state width="1139" height="166" key="GridCell.Tab.0.center/0.23.2048.1067@0.23.2048.1067" timestamp="1608903760119" />
+    <state width="1256" height="166" key="GridCell.Tab.0.center/0.23.2048.1068@0.23.2048.1068" timestamp="1610549498234" />
+    <state width="1256" height="166" key="GridCell.Tab.0.center/0.23.2048.1073@0.23.2048.1073" timestamp="1610472296744" />
+    <state width="1256" height="166" key="GridCell.Tab.0.center/0.23.2048.1074@0.23.2048.1074" timestamp="1610565308332" />
+    <state width="1219" height="166" key="GridCell.Tab.0.center/0.23.2048.1075@0.23.2048.1075" timestamp="1610287947429" />
+    <state width="1219" height="166" key="GridCell.Tab.0.center/0.23.2048.1076@0.23.2048.1076" timestamp="1610279864749" />
+    <state width="1256" height="166" key="GridCell.Tab.0.left" timestamp="1610565308331">
+      <screen x="0" y="23" width="2048" height="1074" />
+    </state>
+    <state width="1044" height="166" key="GridCell.Tab.0.left/0.23.2048.1066@0.23.2048.1066" timestamp="1609261053715" />
+    <state width="1139" height="166" key="GridCell.Tab.0.left/0.23.2048.1067@0.23.2048.1067" timestamp="1608903760117" />
+    <state width="1256" height="166" key="GridCell.Tab.0.left/0.23.2048.1068@0.23.2048.1068" timestamp="1610549498234" />
+    <state width="1256" height="166" key="GridCell.Tab.0.left/0.23.2048.1073@0.23.2048.1073" timestamp="1610472296742" />
+    <state width="1256" height="166" key="GridCell.Tab.0.left/0.23.2048.1074@0.23.2048.1074" timestamp="1610565308331" />
+    <state width="1219" height="166" key="GridCell.Tab.0.left/0.23.2048.1075@0.23.2048.1075" timestamp="1610287947428" />
+    <state width="1219" height="166" key="GridCell.Tab.0.left/0.23.2048.1076@0.23.2048.1076" timestamp="1610279864748" />
+    <state width="1256" height="166" key="GridCell.Tab.0.right" timestamp="1610565308333">
+      <screen x="0" y="23" width="2048" height="1074" />
+    </state>
+    <state width="1044" height="166" key="GridCell.Tab.0.right/0.23.2048.1066@0.23.2048.1066" timestamp="1609261053719" />
+    <state width="1139" height="166" key="GridCell.Tab.0.right/0.23.2048.1067@0.23.2048.1067" timestamp="1608903760121" />
+    <state width="1256" height="166" key="GridCell.Tab.0.right/0.23.2048.1068@0.23.2048.1068" timestamp="1610549498235" />
+    <state width="1256" height="166" key="GridCell.Tab.0.right/0.23.2048.1073@0.23.2048.1073" timestamp="1610472296745" />
+    <state width="1256" height="166" key="GridCell.Tab.0.right/0.23.2048.1074@0.23.2048.1074" timestamp="1610565308332" />
+    <state width="1219" height="166" key="GridCell.Tab.0.right/0.23.2048.1075@0.23.2048.1075" timestamp="1610287947429" />
+    <state width="1219" height="166" key="GridCell.Tab.0.right/0.23.2048.1076@0.23.2048.1076" timestamp="1610279864749" />
+    <state x="1149" y="23" width="884" height="1074" key="dock-window-1" timestamp="1609416276083">
+      <screen x="0" y="23" width="2048" height="1075" />
+    </state>
+    <state x="1149" y="23" width="884" height="1074" key="dock-window-1/0.23.2048.1075@0.23.2048.1075" timestamp="1609416276083" />
+    <state x="1153" y="23" width="883" height="1067" key="dock-window-2" timestamp="1609416276084">
+      <screen x="0" y="23" width="2048" height="1075" />
+    </state>
+    <state x="1153" y="23" width="883" height="1067" key="dock-window-2/0.23.2048.1075@0.23.2048.1075" timestamp="1609416276084" />
+    <state x="1213" y="46" width="852" height="851" key="dock-window-3" timestamp="1609416276084">
+      <screen x="0" y="23" width="2048" height="1075" />
+    </state>
+    <state x="1213" y="46" width="852" height="851" key="dock-window-3/0.23.2048.1075@0.23.2048.1075" timestamp="1609416276084" />
   </component>
 </project>
