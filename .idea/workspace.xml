@@ -1,51 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d0567cc5-bc2e-4508-8e4c-b7d73c250644" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/fonts/NotoSerif/NotoSerif-Bold.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/NotoSerif/NotoSerif-BoldItalic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/NotoSerif/NotoSerif-Italic.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/fonts/NotoSerif/NotoSerif-Regular.ttf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/teeth_background.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Cards.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Choice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Choice.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/admins_components/AdminFooter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admins_components/AdminFooter.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/admins_components/AdminFrame.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admins_components/AdminFrame.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/admins_components/AdminMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admins_components/AdminMenu.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/admins_components/AdminSwitcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admins_components/AdminSwitcher.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/FrameTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/FrameTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/FrameTablesReports.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/FrameTablesReports.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/ReportsPerEmployee.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/ReportsPerEmployee.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/ReportsSwitcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/ReportsSwitcher.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/TableRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/RowTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/TablesRowForReports.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/RowTablesReports.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/reportsPages/FrameRecordTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/reportsPages/FrameRecordTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/reportsPages/OvertimeHours.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/reportsPages/OvertimeHours.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/reportsPages/TableRecordRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/reportsPages/RowRecordTable.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/reportsPages/WorkDays.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/reportsPages/WorkDays.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/reportsPages/WorkHours.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/reportsPages/WorkHours.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/admins_components/forms/FormAddEmployee.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admins_components/forms/FormAddEmployee.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/admins_components/forms/FormAddRoleEmployee.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admins_components/forms/FormAddRoleEmployee.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/admins_components/forms/FormDeleteEmployee.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admins_components/forms/FormDeleteEmployee.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/admins_components/forms/FormDeleteRoleEmployee.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admins_components/forms/FormDeleteRoleEmployee.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/admins_components/forms/FormEditEmployee.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admins_components/forms/FormEditEmployee.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/components.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/components.module.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/images/logoaviv.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/logoaviv.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/actions/appAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/appAction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/actions/manageEmployeeAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/manageEmployeeAction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/actions/tableAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/tableAction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/actions/userAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/userAction.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/appReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/appReducer.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/reducers/userReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/userReducer.js" afterDir="false" />
-    </list>
+    <list default="true" id="d0567cc5-bc2e-4508-8e4c-b7d73c250644" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -67,6 +23,9 @@
       </list>
     </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GithubDefaultAccount">
+    <option name="defaultAccountId" value="dc778568-9209-497f-be23-b1ba5c48c875" />
   </component>
   <component name="JsFlowSettings">
     <service-enabled>true</service-enabled>
@@ -96,6 +55,7 @@
     <property name="node.js.selected.package.standard" value="" />
     <property name="nodejs_interpreter_path" value="node" />
     <property name="nodejs_package_manager_path" value="npm" />
+    <property name="settings.editor.selected.configurable" value="settings.github" />
     <property name="ts.external.directory.path" value="$APPLICATION_HOME_DIR$/plugins/JavaScriptLanguage/jsLanguageServicesImpl/external" />
   </component>
   <component name="RecentsManager">
@@ -182,6 +142,7 @@
       <workItem from="1612028200838" duration="4555000" />
       <workItem from="1613042943619" duration="36307000" />
       <workItem from="1613841274276" duration="351000" />
+      <workItem from="1614856893409" duration="194000" />
     </task>
     <task id="LOCAL-00001" summary="before fix">
       <created>1610623064967</created>
@@ -190,7 +151,14 @@
       <option name="project" value="LOCAL" />
       <updated>1610623064967</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="update clean code">
+      <created>1614857004033</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1614857004033</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -200,7 +168,8 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="before fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="before fix" />
+    <MESSAGE value="update clean code" />
+    <option name="LAST_COMMIT_MESSAGE" value="update clean code" />
   </component>
   <component name="WindowStateProjectService">
     <state x="217" y="225" key="#ESLint" timestamp="1608830969637">
@@ -218,10 +187,10 @@
     <state x="355" y="311" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.2048.1067@0.23.2048.1067" timestamp="1608121623669" />
     <state x="355" y="313" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.2048.1074@0.23.2048.1074" timestamp="1609416683401" />
     <state x="355" y="313" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.2048.1075@0.23.2048.1075" timestamp="1611948603821" />
-    <state x="264" y="160" key="CommitChangelistDialog2" timestamp="1610623064573">
+    <state x="264" y="160" key="CommitChangelistDialog2" timestamp="1614857003795">
       <screen x="0" y="23" width="2048" height="1073" />
     </state>
-    <state x="264" y="160" key="CommitChangelistDialog2/0.23.2048.1073@0.23.2048.1073" timestamp="1610623064573" />
+    <state x="264" y="160" key="CommitChangelistDialog2/0.23.2048.1073@0.23.2048.1073" timestamp="1614857003795" />
     <state x="503" y="460" width="663" height="190" key="Github.ShareDialog" timestamp="1610550875528">
       <screen x="0" y="23" width="2048" height="1067" />
     </state>
@@ -266,10 +235,14 @@
     <state width="1125" height="166" key="GridCell.Tab.0.right/0.23.2048.1074@0.23.2048.1074" timestamp="1611928268927" />
     <state width="1177" height="166" key="GridCell.Tab.0.right/0.23.2048.1075@0.23.2048.1075" timestamp="1613300617847" />
     <state width="1177" height="166" key="GridCell.Tab.0.right/0.23.2048.1076@0.23.2048.1076" timestamp="1613208084355" />
-    <state x="282" y="297" key="Vcs.Push.Dialog.v2" timestamp="1610623068239">
+    <state x="119" y="194" key="SettingsEditor" timestamp="1614857087244">
       <screen x="0" y="23" width="2048" height="1073" />
     </state>
-    <state x="282" y="297" key="Vcs.Push.Dialog.v2/0.23.2048.1073@0.23.2048.1073" timestamp="1610623068239" />
+    <state x="119" y="194" key="SettingsEditor/0.23.2048.1073@0.23.2048.1073" timestamp="1614857087244" />
+    <state x="282" y="297" key="Vcs.Push.Dialog.v2" timestamp="1614857011390">
+      <screen x="0" y="23" width="2048" height="1073" />
+    </state>
+    <state x="282" y="297" key="Vcs.Push.Dialog.v2/0.23.2048.1073@0.23.2048.1073" timestamp="1614857011390" />
     <state x="1139" y="25" width="909" height="1045" key="dock-window-1" timestamp="1613131988198">
       <screen x="0" y="23" width="2048" height="1075" />
     </state>
