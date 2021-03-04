@@ -1,17 +1,16 @@
 import React, {useEffect} from "react";
 import {getHoursInRange, pageTableSwitch, saveWorkHours} from "../../../../redux/actions/appAction";
 import {connect} from "react-redux";
+
 const WorkHours = (props) => {
 
-    let seconds=props.workHours
-    let hour=0;
-    let minutes=0;
-    if(seconds){
-        seconds*=60;
-        seconds = seconds % (24 * 3600);
+    let seconds = props.workHours
+    let hour = 0;
+    let minutes = 0;
+    if (seconds) {
+        seconds *= 60;
         hour = Math.floor(seconds / 3600);
         minutes = Math.floor((seconds %= 3600) / 60);
-        console.log(hour)
     }
 
     useEffect(() => {
@@ -21,8 +20,7 @@ const WorkHours = (props) => {
     })
 
     useEffect(() => {
-        seconds=props.workHours;
-    },[props.workHours])
+    }, [props.workHours])
 
     useEffect(() => {
         return () => {
@@ -30,10 +28,23 @@ const WorkHours = (props) => {
         }
     }, [])
 
+    function getName() {
+        let user = props.employees.filter((empl) => empl.idUser == props.params.idUser);
+        return user[0].firstName + " " + user[0].lastName;
+    }
+
     return (
-        <div className="container">
+        <div className="container mt-5">
             <div className="row">
-                <h1>his worked hours in range which you piked is hours: {hour} minutes: {minutes}</h1>
+                <div className="col-12 text-center">
+                    <p>In range which you piked work hours of <b>{getName()}</b> is</p>
+                </div>
+                <div className="col-12 text-center">
+                    <p>Hours: <b>{hour}</b></p>
+                </div>
+                <div className="col-12 text-center">
+                    <p>Minutes: <b>{minutes}</b></p>
+                </div>
             </div>
         </div>
     )
@@ -41,7 +52,8 @@ const WorkHours = (props) => {
 const mapStateToProps = state => {
     return {
         workHours: state.app.workHours,
-        params: state.app.dataForRequest
+        params: state.app.dataForRequest,
+        employees: state.app.employees
     }
 }
 const mapDispatchToProps = {

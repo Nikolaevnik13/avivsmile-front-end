@@ -1,8 +1,8 @@
 import React, {useState} from "react";
 import {connect} from "react-redux";
 import {addNewEmployee} from "../../../redux/actions/manageEmployeeAction";
-import {pageNavigationSubAdminAction} from "../../../redux/actions/appAction";
-
+import {closeAlertInStore, pageNavigationSubAdminAction} from "../../../redux/actions/appAction";
+import {Modal} from "react-bootstrap";
 
 
 const FormAddEmployee = (props) => {
@@ -19,9 +19,6 @@ const FormAddEmployee = (props) => {
         setState(prevState => ({...prevState, ...{[event.target.name]: event.target.value}}))
     };
 
-
-
-
     const handlerSubmit = (event) => {
         event.preventDefault()
         props.addNewEmployee(state);
@@ -33,14 +30,13 @@ const FormAddEmployee = (props) => {
         });
     };
 
-
     return (
         <div className="container mt-5">
             <div className="row">
                 <div className="col-10">
                     <form onSubmit={handlerSubmit}>
                         <div className="form-group">
-                            <label>Employee id</label>
+                            <label>Employee id:</label>
                             <input type="number"
                                    required
                                    min="1"
@@ -53,7 +49,7 @@ const FormAddEmployee = (props) => {
                         </div>
 
                         <div className="form-group">
-                            <label>First Name</label>
+                            <label>First Name:</label>
                             <input type="text"
                                    required
                                    pattern="\D+"
@@ -64,7 +60,7 @@ const FormAddEmployee = (props) => {
                             />
                         </div>
                         <div className="form-group">
-                            <label>First Name</label>
+                            <label>Last Name:</label>
                             <input type="text"
                                    required
                                    pattern="\D+"
@@ -74,7 +70,7 @@ const FormAddEmployee = (props) => {
                                    onChange={handlerInput}/>
                         </div>
                         <div className="form-group">
-                            <label>Password</label>
+                            <label>Password:</label>
                             <input type="number"
                                    required
                                    min="1"
@@ -86,20 +82,27 @@ const FormAddEmployee = (props) => {
                                    onChange={handlerInput}/>
                         </div>
                         <button type="submit"
-                                className="btn btn-primary">Submit</button>
+                                className="btn button-submit mt-2">Submit
+                        </button>
                     </form>
                 </div>
             </div>
+            <Modal show={props.showInStore} onHide={() => props.closeAlertInStore()}>
+                <Modal.Body>{props.alert}</Modal.Body>
+            </Modal>
         </div>
     )
 }
-// const mapStateToProps=state=>{
-//     return{
-//         userAuth:state.user.user
-//     }
-// }
+
+const mapStateToProps = state => {
+    return {
+        alert: state.app.alert,
+        showInStore: state.app.show
+    }
+}
 const mapDispatchToProps = {
     addNewEmployee,
-    pageNavigationSubAdminAction
+    pageNavigationSubAdminAction,
+    closeAlertInStore,
 }
-export default connect(null, mapDispatchToProps)(FormAddEmployee);
+export default connect(mapStateToProps, mapDispatchToProps)(FormAddEmployee);

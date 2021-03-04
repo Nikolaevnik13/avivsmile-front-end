@@ -1,14 +1,16 @@
 import React, {useState} from "react";
-
 import {Button, Modal, OverlayTrigger, Tooltip} from "react-bootstrap";
 import {connect} from "react-redux";
-import {deleteRecordAction, editRecordAction, fetchAllRecordsByDay} from "../../../../redux/actions/tableAction";
-import {getRecordsInRange, saveDateForRequestTable} from "../../../../redux/actions/appAction";
+import {editRecordAction, deleteRecordAction, fetchAllRecordsByDay} from "../../../redux/actions/tableAction";
+import {
+    closeAlertInStore,
+    saveAlertToStore,
+    saveDateForRequestTable,
+    showAlertInStore
+} from "../../../redux/actions/appAction";
 
 
-
-
-const TableRecordRow = (props) => {
+const RowTable = (props) => {
 
     let placeHolderStart = "09:00";
     let placeHolderFinish = "20:00";
@@ -33,28 +35,66 @@ const TableRecordRow = (props) => {
     }
 
     let total = "none"
-    if (state.start && state.finish) {
-        let seconds = (new Date(props.user.finish).getTime() - new Date(props.user.start).getTime()) / 1000;
-        console.log(seconds)
-        seconds = seconds % (24 * 3600);
-        let hour = Math.floor(seconds / 3600);
-        let minutes = Math.floor((seconds %= 3600) / 60);
-        total = hour + " h :" + minutes + " min"
+
+    if (props.user.start && props.user.finish) {
+        let startDate = new Date(props.user.start);
+        startDate.setSeconds(0)
+
+        let finishDate = new Date(props.user.finish);
+        finishDate.setSeconds(0)
+
+        let difDate = new Date(finishDate.getTime() - startDate.getTime());
+        difDate.setHours(difDate.getHours() - 2)
+
+        let addedZeroArr = [
+            "0" + difDate.getHours(),
+            "0" + difDate.getMinutes()
+        ].map(line => line.slice(-2));
+        total = addedZeroArr[0] + " h :" + addedZeroArr[1] + " min"
     }
 
     const handlerOnChange = e => {
         setState(prevState => ({...prevState, ...{[e.target.name]: e.target.value}}))
     }
 
-    function validationDateBeforeFetch(date) {
+    function validationDateBeforeFetch(date, nameTime) {
         let pattern = new RegExp("^(2[0-3]|[01][0-9]):([0-5][0-9])$");
-        if (pattern.test(date)) return true
+
+        function checkForCorrectTiming() {
+
+            if (nameTime === "finish" && props.user.start) {
+                let finishHours = +date.slice(0, 2);
+                let finishMin = +date.slice(3);
+                let startDate = new Date(props.user.start)
+                let startHours = +startDate.getHours()
+                let startMin = +startDate.getMinutes()
+                if ((startHours > finishHours) || (startHours === finishHours && finishMin < startMin)) {
+                    return false;
+                }
+            }
+
+            if (nameTime === "start" && props.user.finish) {
+                let startHours = +date.slice(0, 2);
+                let startMin = +date.slice(3);
+                let finishDate = new Date(props.user.finish)
+                let finishHours = +finishDate.getHours()
+                let finishMin = +finishDate.getMinutes()
+                if ((startHours > finishHours) || (startHours === finishHours && finishMin < startMin)) {
+                    return false;
+                }
+            }
+            return true;
+        }
+
+        if (pattern.test(date) && checkForCorrectTiming()) {
+            return true
+        }
         return false;
     }
 
 
     const handlerOnBlur = e => {
-        if (validationDateBeforeFetch(e.target.value)) {
+        if (validationDateBeforeFetch(e.target.value, e.target.name)) {
             let oldTime = props.user[e.target.name];
             let record;
             let newTime;
@@ -65,20 +105,14 @@ const TableRecordRow = (props) => {
             } else {
                 newTime = props.user.date + "T" + e.target.value + ":00";
             }
-            // debugger
             record = props.user;
             record = {...record, [e.target.name]: newTime}
+            props.saveDateForRequestTable({date: record.date});
+            props.editRecordAction(record, fetchAllRecordsByDay)
 
-            // props.saveDateForRequestTable({date:record.date});
-            // console.log({date:record.date})
-            // console.log(editRecordAction)
-            console.log("74444444")
-            console.log(record)
-            props.editRecordAction(record,getRecordsInRange)
-
-            // props.editRecordAction(record)
         } else {
-            alert("enter correct time")
+            props.saveAlertToStore("Enter correct time")
+            props.showAlertInStore()
         }
     }
     const handlerKeyUp = event => {
@@ -88,13 +122,15 @@ const TableRecordRow = (props) => {
     }
 
     const handleDeleteRecord = e => {
-        props.deleteRecordAction(props.user.id,fetchAllRecordsByDay);
+        props.deleteRecordAction(props.user.id, fetchAllRecordsByDay);
     }
+    let preparedDate = props.user.date.split("-").reverse().join("-");
+
     return <tr>
         <td>{props.user.user.firstName + " " + props.user.user.lastName}</td>
+        <td>{preparedDate}</td>
 
         <OverlayTrigger overlay={<Tooltip id="tooltip-disabled">example (12:00)</Tooltip>}>
-
             <td><input type="text"
                        placeholder={placeHolderStart}
                        onBlur={handlerOnBlur}
@@ -116,9 +152,9 @@ const TableRecordRow = (props) => {
         <td>{total}</td>
         <td>
             <button type="button"
-                    className="btn btn-outline-primary"
+                    className="btn btn-outline-secondary"
                     onClick={handleShow}
-            >deleteeee
+            >delete
             </button>
         </td>
 
@@ -128,26 +164,37 @@ const TableRecordRow = (props) => {
             </Modal.Header>
             <Modal.Body>You will not be able return it!</Modal.Body>
             <Modal.Footer>
-                <Button variant="secondary" onClick={handleClose}>
+                <Button variant="btn btn-secondary" onClick={handleClose}>
                     Cancel
                 </Button>
-                <Button variant="primary" onClick={handleDeleteRecord}>
+                <Button variant="btn button-submit" onClick={handleDeleteRecord}>
                     Confirm delete
                 </Button>
             </Modal.Footer>
         </Modal>
+        <Modal show={props.showInStore} onHide={() => props.closeAlertInStore()}>
+            <Modal.Body>{props.alert}</Modal.Body>
+        </Modal>
     </tr>
-
 }
+
+const mapStateToProps = state => {
+    return {
+        alert: state.app.alert,
+        showInStore: state.app.show
+    }
+}
+
 const mapDispatchToProps = {
     editRecordAction,
     deleteRecordAction,
-
     fetchAllRecordsByDay,
     saveDateForRequestTable,
-    getRecordsInRange
+    showAlertInStore,
+    closeAlertInStore,
+    saveAlertToStore
 }
-export default connect(null, mapDispatchToProps)(TableRecordRow);
+export default connect(mapStateToProps, mapDispatchToProps)(RowTable);
 
 
 

@@ -14,7 +14,7 @@ import {store} from "./redux";
 ReactDOM.render(
     <Provider store={store}>
   <React.StrictMode>
-    <div>
+    <div className="frame001">
       <App />
     </div>
 

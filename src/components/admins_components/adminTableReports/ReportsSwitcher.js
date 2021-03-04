@@ -1,37 +1,45 @@
-import React from "react"
+import React, {useEffect} from "react"
 import {connect} from "react-redux";
 import WorkDays from "./reportsPages/WorkDays";
 import WorkHours from "./reportsPages/WorkHours";
 import OvertimeHours from "./reportsPages/OvertimeHours";
-import FrameTable from "./FrameTable";
+import {getRowsWithNull} from "../../../redux/actions/appAction";
 import FrameTablesReports from "./FrameTablesReports";
-import FrameRecordTable from "./reportsPages/FrameRecordTable";
 
 const ReportsSwitcher = (props) => {
-    switch (props.pageTableSwitch) {
 
-        case "numberWorkDays":
-            return <WorkDays/>
+    if (props.recordsWithNull.length){
+        console.log(props.recordsWithNull)
+        return (<div>
+                <h1 className="text-center m-5">There are incorrect records. Fix them and then will see asked data.</h1>
+                <FrameTablesReports/>
+            </div>
+        )
+    }else{
+        switch (props.pageTableSwitch) {
 
-        case "countHours":
-            return <WorkHours/>
+            case "workDays":
+                return <WorkDays/>
 
-        case "overtimeHours":
-            return <OvertimeHours/>
+            case "workHours":
+                return <WorkHours/>
 
-        case "recordsInRange":return <FrameRecordTable/>
+            case "overTime":
+                return <OvertimeHours/>
 
-
-        default:
-            return <h1> default!!!</h1>
+            default:
+                return <h1> default</h1>
+        }
     }
-
-
 }
 const mapStateToProps = state => {
     return {
-        pageTableSwitch: state.app.pageTableSwitch,
-
+        pageTableSwitch: state.app.switcherReports,
+        recordsWithNull:state.tableData.records,
+        dateParams:state.app.dataForRequest
     }
 }
-export default connect(mapStateToProps, null)(ReportsSwitcher);
+const mapDispatchToProps={
+    getRowsWithNull
+}
+export default connect(mapStateToProps, mapDispatchToProps)(ReportsSwitcher);

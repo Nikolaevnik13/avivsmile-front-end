@@ -9,7 +9,9 @@ export const Button=(props)=>{
         type="button"
         className={`btn ${props.color}`}>{props.title}</button>
 }
+
 const mapDispatchToProps={
     pageNavigationAction
 }
+
 export default connect (null,mapDispatchToProps)(Button);

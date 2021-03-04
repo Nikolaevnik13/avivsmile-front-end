@@ -14,15 +14,13 @@ function App(props) {
     switch (props.page) {
         case "":
             return <Menu/>
-            // return <div>
-            //      <AdminFrame />
-            //  </div>
+
         case "Cards":
-            return (<div>
+            return (<div className="frame0">
                      <Header/>
                       <Cards/>
-                         <div className="d-flex justify-content-center mt-3">
-                        <Button color={"btn-outline-danger"} title={"MENU"}/>
+                         <div className="d-flex justify-content-center mt-3 pb-5">
+                        <Button color={"btn-outline-danger"} title={"MENU"} />
                          </div>
                       </div>)
         case "Choice":

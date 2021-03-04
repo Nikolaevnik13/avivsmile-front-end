@@ -1,12 +1,12 @@
 import {URI_LOGIN, URI_RECORD_START_FINISH} from "../../utils/configuration";
-import {pageNavigationAction} from "./appAction";
+import {closeAlertInStore, pageNavigationAction, saveAlertToStore, showAlertInStore} from "./appAction";
 import {encoderBase64} from "../../utils/util";
 
-export const REMOVE_USER_FROM_STORE="USER/REMOVE_USER_FROM_STORE"
+export const REMOVE_USER_FROM_STORE = "USER/REMOVE_USER_FROM_STORE"
 export const SAVE_USER_TO_STORE = "USER/SAVE_USER_TO_STORE";
 
 
-export function loginAction(userForFetch,flagLogin) {
+export function loginAction(userForFetch, flagLogin) {
     return async dispatch => {
         try {
             const settings = {
@@ -18,20 +18,18 @@ export function loginAction(userForFetch,flagLogin) {
             }
             const response = await fetch(URI_LOGIN, settings)
             if (!response.ok) {
-                console.log("error" + response.status, response.message)
-                // <Alert
-                alert("Unauthorized")
-                dispatch(pageNavigationAction("Cards"))
+                dispatch(saveAlertToStore("Your password is not correct,try again"))
+                dispatch(showAlertInStore())
+                setTimeout(() => {
+                    dispatch(closeAlertInStore())
+                }, 5000)
                 return
             }
-            // const user = await response.json();
             dispatch(saveUserToStore(userForFetch))
-            // if (user.roles.includes("Administrator")){
-                if (flagLogin){
-                    dispatch(pageNavigationAction("AdminFrame"))
-                    return
-                }
-            // }
+            if (flagLogin) {
+                dispatch(pageNavigationAction("AdminFrame"))
+                return
+            }
             dispatch(pageNavigationAction("Choice"))
 
         } catch (e) {
@@ -41,6 +39,7 @@ export function loginAction(userForFetch,flagLogin) {
         }
     }
 }
+
 
 export function writeRecordStartOrFinish(flag, userForFetch) {
     let endUri = flag ? "start/" + userForFetch.idUser : "finish/" + userForFetch.idUser;
@@ -53,7 +52,7 @@ export function writeRecordStartOrFinish(flag, userForFetch) {
                     "Authorization": encoderBase64(userForFetch)
                 }
             }
-            const response = await fetch(URI_RECORD_START_FINISH+endUri,settings)
+            const response = await fetch(URI_RECORD_START_FINISH + endUri, settings)
             if (!response.ok) {
                 console.log("error" + response.status, response.message)
                 alert("Unauthorized")
@@ -61,12 +60,18 @@ export function writeRecordStartOrFinish(flag, userForFetch) {
                 return
             }
 
-        const record = await response.json();
-        let timeStamp=flag?record.start:record.finish
-            let array=timeStamp.split("T");
-            alert("your time was written as :"+array[1])
-            dispatch(removeUserToStore())
-            dispatch(pageNavigationAction("Menu"))
+            const record = await response.json();
+            let timeStamp = flag ? record.start : record.finish
+            let array = timeStamp.split("T");
+            console.log("action write")
+            dispatch(saveAlertToStore("Your time was written as :" + array[1]))
+            dispatch(showAlertInStore())
+            setTimeout(() => {
+                dispatch(removeUserToStore())
+                dispatch(pageNavigationAction("Menu"))
+                dispatch(closeAlertInStore())
+            }, 3000)
+
 
         } catch (e) {
             // ------------------------- TO DO-----------------------
@@ -76,6 +81,7 @@ export function writeRecordStartOrFinish(flag, userForFetch) {
 
     }
 }
+
 export function removeUserToStore() {
     return {
         type: REMOVE_USER_FROM_STORE,

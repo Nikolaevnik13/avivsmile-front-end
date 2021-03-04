@@ -1,7 +1,12 @@
 import React, {useEffect, useState} from "react";
-import {getEmployeesWithoutAdminAction, pageNavigationSubAdminAction} from "../../../redux/actions/appAction";
+import {
+    closeAlertInStore,
+    getEmployeesWithoutAdminAction,
+    pageNavigationSubAdminAction
+} from "../../../redux/actions/appAction";
 import {addRoleAction} from "../../../redux/actions/manageEmployeeAction";
 import {connect} from "react-redux";
+import {Modal} from "react-bootstrap";
 
 const FormAddRoleEmployee = (props) => {
 
@@ -26,12 +31,10 @@ const FormAddRoleEmployee = (props) => {
         setFixedArrayEmployees([defaultObg, ...props.employees]);
     }, [props.employees])
 
-
     const handlerSubmit = (event) => {
         event.preventDefault()
         props.addRoleAction(state,props.userAuth)
     };
-
 
     return(
         <div className="container mt-5">
@@ -39,7 +42,7 @@ const FormAddRoleEmployee = (props) => {
                 <div className="col-10">
                     <form onSubmit={handlerSubmit}>
                         <div className="form-group">
-                            <label>Choose, whom employee you want add role admin</label>
+                            <label>Choose, whom employee you want add role admin:</label>
                             <select className="form-control"
                                     onChange={handlerInput}
                                     name="idUser"
@@ -48,24 +51,30 @@ const FormAddRoleEmployee = (props) => {
                                 </option>)}</select>
                         </div>
                         <button type="submit"
-                                className="btn btn-primary">Submit
+                                className="btn button-submit mt-2">Submit
                         </button>
                     </form>
                 </div>
             </div>
+            <Modal show={props.showInStore} onHide={() => props.closeAlertInStore()}>
+                <Modal.Body>{props.alert}</Modal.Body>
+            </Modal>
         </div>
     )
 }
 const mapStateToProps = state => {
     return {
         userAuth: state.user.user,
-        employees: state.app.employees
+        employees: state.app.employees,
+        alert: state.app.alert,
+        showInStore: state.app.show
     }
 }
 const mapDispatchToProps = {
     pageNavigationSubAdminAction,
     getEmployeesWithoutAdminAction,
-    addRoleAction
+    addRoleAction,
+    closeAlertInStore
 }
 
 export default connect(mapStateToProps,mapDispatchToProps) (FormAddRoleEmployee);

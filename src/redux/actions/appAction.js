@@ -18,9 +18,30 @@ export const SAVE_DATE_FOR_REQUEST_TABLE = "APP/SAVE_DATE_FOR_REQUEST_TABLE"
 export const REMOVE_DATE_FOR_REQUEST_TABLE = "APP/REMOVE_DATE_FOR_REQUEST_TABLE"
 export const SAVE_NUM_WORK_DAY = "APP/SAVE_NUM_WORK_DAY"
 export const SAVE_WORK_HOURS = "APP/SAVE_WORK_HOURS"
-export const SAVE_OVERTIME_HOURS="APP/SAVE_OVERTIME_HOURS"
-export const SAVE_RECORDS_TO_ARRAY="APP/SAVE_RECORDS_TO_ARRAY"
+export const SAVE_OVERTIME_HOURS = "APP/SAVE_OVERTIME_HOURS"
+export const SAVE_RECORDS_TO_ARRAY = "APP/SAVE_RECORDS_TO_ARRAY"
+export const SWITCHER_PAGE_REPORTS = "APP/SWITCHER_PAGE_REPORTS"
+export const SAVE_ALERT_TO_STORE = "APP/SAVE_ALERT_TO_STORE";
+export const SHOW_ALERT_IN_STORE="APP/SHOW_ALERT_IN_STORE";
+export const CLOSE_ALERT_IN_STORE="APP/CLOSE_SHOW_ALERT_IN_STORE";
 
+export function saveAlertToStore(payload) {
+    return {
+        type: SAVE_ALERT_TO_STORE,
+        payload: payload
+    }
+}
+
+export function showAlertInStore() {
+    return {
+        type:SHOW_ALERT_IN_STORE,
+    }
+}
+export function closeAlertInStore() {
+    return {
+        type: CLOSE_ALERT_IN_STORE,
+    }
+}
 
 export function pageNavigationAction(page) {
 
@@ -101,12 +122,20 @@ export function saveOvertimeHours(count) {
         payload: count
     }
 }
+
 export function saveRecordsToArray(array) {
-    return{
-        type:SAVE_RECORDS_TO_ARRAY,
-        payload:array
+    return {
+        type: SAVE_RECORDS_TO_ARRAY,
+        payload: array
     }
 
+}
+
+export function switchPageReports(page) {
+    return {
+        type: SWITCHER_PAGE_REPORTS,
+        payload: page
+    }
 }
 
 
@@ -121,26 +150,20 @@ export function getRowsWithNull(params) {
                     "Authorization": encoderBase64(authUser)
                 }
             }
-            console.log(params)
             let paramsUri = `idUser=${params.idUser}&startDate=${params.startDate}&finishDate=${params.finishDate}`;
             let response = await fetch(URI_CHECK_ROWS_FOR_NULL + paramsUri, settings);
-
             const json = await response.json();
-            console.log(json)
             dispatch(saveAllRecords(json))
-
         } catch (e) {
             //---------------------------TO DO-----------------------
-
-            alert("error in getRowsWithNull line 45....")
+            alert("error in getRowsWithNull line 159")
             // ------------------------- TO DO-----------------------
         }
     }
 }
 
-export function getRecordsInRange(params) {
-    console.log(params)
-    console.log("1111")
+export function getRecordsInRange() {
+
     return async (dispatch, getState) => {
         try {
             const authUser = getState().user.user;
@@ -151,16 +174,15 @@ export function getRecordsInRange(params) {
                     "Authorization": encoderBase64(authUser)
                 }
             }
+            let params=getState().app.dataForRequest
             let paramsUri = `idUser=${params.idUser}&startDate=${params.startDate}&finishDate=${params.finishDate}`;
             let response = await fetch(URI_GET_RECORDS_IN_RANGE + paramsUri, settings);
             const json = await response.json();
-     console.log(json)
             dispatch(saveRecordsToArray(json))
 // TO DO
         } catch (e) {
             //---------------------------TO DO-----------------------
-
-            alert("error in getRowsWithNull ")
+            alert("error in getRecordsInRange 185 ")
             // ------------------------- TO DO-----------------------
         }
     }
@@ -181,11 +203,10 @@ export function getNumWorkDay(params) {
             let paramsUri = `idUser=${params.idUser}&startDate=${params.startDate}&finishDate=${params.finishDate}`;
             let response = await fetch(URI_GET_COUNT_WORK_DAY + paramsUri, settings);
             const json = await response.json();
-                dispatch(saveNumWorkday(json))
+            dispatch(saveNumWorkday(json))
         } catch (e) {
             //---------------------------TO DO-----------------------
-
-            alert("error in getNumWorkDay ")
+            alert("error in getNumWorkDay 209")
             // ------------------------- TO DO-----------------------
         }
     }
@@ -208,13 +229,12 @@ export function getHoursInRange(params) {
             let response = await fetch(URI_GET_HOURS_IN_RANGE + paramsUri, settings);
 
             const json = await response.json();
-                dispatch(saveWorkHours(json))
+            dispatch(saveWorkHours(json))
 
-// TO DO
         } catch (e) {
             //---------------------------TO DO-----------------------
 
-            alert("error in getHoursInRange "+e.message+e)
+            alert("error in getHoursInRange  237" + e.message + e)
             // ------------------------- TO DO-----------------------
         }
     }
@@ -235,7 +255,7 @@ export function getOverTimeInRange(params) {
             let paramsUri = `idUser=${params.idUser}&startDate=${params.startDate}&finishDate=${params.finishDate}`;
             let response = await fetch(URI_GET_OVERTIME_IN_RANGE + paramsUri, settings);
             const json = await response.json();
-                dispatch(saveOvertimeHours(json))
+            dispatch(saveOvertimeHours(json))
         } catch (e) {
             //---------------------------TO DO-----------------------
 
@@ -270,8 +290,7 @@ export function getEmployeesAction(flag) {
 
         } catch (e) {
             //---------------------------TO DO-----------------------
-            console.log("catch ", e.message)
-            alert("error in getEmployeesAction")
+            alert("error in getEmployeesAction 293")
             // ------------------------- TO DO-----------------------
         }
 
@@ -294,8 +313,8 @@ export function getEmployeesWithoutAdminAction() {
 
         } catch (e) {
             //---------------------------TO DO-----------------------
-            console.log("catch ", e.message)
-            alert("error in getEmployeesWithoutAdminAction line 77")
+
+            alert("error in getEmployeesWithoutAdminAction line 317")
             // ------------------------- TO DO-----------------------
         }
     }

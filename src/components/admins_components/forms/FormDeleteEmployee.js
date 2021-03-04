@@ -1,9 +1,14 @@
 import React, {useEffect, useState} from "react";
-import {getEmployeesWithoutAdminAction, pageNavigationSubAdminAction} from "../../../redux/actions/appAction";
+import {
+    closeAlertInStore,
+    getEmployeesWithoutAdminAction,
+    pageNavigationSubAdminAction
+} from "../../../redux/actions/appAction";
 import {deleteEmployeeAction} from "../../../redux/actions/manageEmployeeAction";
 import {connect} from "react-redux";
+import {Modal} from "react-bootstrap";
 
-const FormDeleteEmployee=(props)=>{
+const FormDeleteEmployee = (props) => {
     const [fixedArrayEmployees, setFixedArrayEmployees] = useState([])
     const [state, setState] = useState({
         idUser: "",
@@ -18,56 +23,63 @@ const FormDeleteEmployee=(props)=>{
     };
     useEffect(() => {
         props.getEmployeesWithoutAdminAction();
-    },[])
+    }, [])
 
     useEffect(() => {
-        const defaultObg={idUser: "", firstName: "none", lastName: "selected"}
+        const defaultObg = {idUser: "", firstName: "none", lastName: "selected"}
         setFixedArrayEmployees([defaultObg, ...props.employees]);
     }, [props.employees])
 
 
     const handlerSubmit = (event) => {
         event.preventDefault()
-        props.deleteEmployeeAction(state,props.userAuth)
+        props.deleteEmployeeAction(state, props.userAuth)
     };
 
-    useEffect(()=>{
+    useEffect(() => {
         return () => {
             console.log("unmount deleteform")
         }
-    },[])
-    return(
+    }, [])
+    return (
         <div className="container mt-5">
             <div className="row">
                 <div className="col-10">
                     <form onSubmit={handlerSubmit}>
                         <div className="form-group">
-                            <label>Choose, whom employee you want change</label>
+                            <label>Choose, whom employee you want change:</label>
                             <select className="form-control"
                                     onChange={handlerInput}
                                     name="idUser"
                                     required>
-                                {fixedArrayEmployees.map((employee, index) => <option value={employee.idUser} key={index}>{employee.firstName + " " + employee.lastName}
+                                {fixedArrayEmployees.map((employee, index) => <option value={employee.idUser}
+                                                                                      key={index}>{employee.firstName + " " + employee.lastName}
                                 </option>)}</select>
                         </div>
                         <button type="submit"
-                                className="btn btn-primary">Submit
+                                className="btn button-submit mt-2">Submit
                         </button>
                     </form>
                 </div>
             </div>
+            <Modal show={props.showInStore} onHide={() => props.closeAlertInStore()}>
+                <Modal.Body>{props.alert}</Modal.Body>
+            </Modal>
         </div>
     )
 }
 const mapStateToProps = state => {
     return {
         userAuth: state.user.user,
-        employees: state.app.employees
+        employees: state.app.employees,
+        alert: state.app.alert,
+        showInStore: state.app.show
     }
 }
 const mapDispatchToProps = {
     pageNavigationSubAdminAction,
     getEmployeesWithoutAdminAction,
-    deleteEmployeeAction
+    deleteEmployeeAction,
+    closeAlertInStore,
 }
-export default connect(mapStateToProps,mapDispatchToProps)(FormDeleteEmployee);
+export default connect(mapStateToProps, mapDispatchToProps)(FormDeleteEmployee);

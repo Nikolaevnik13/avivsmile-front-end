@@ -1,5 +1,6 @@
 import {encoderBase64} from "../../utils/util";
 import {URI_DELETE_RECORD_BY_ID_ROW, URI_EDIT_RECORD, URI_GET_ALL_RECORDS_BY_DAY} from "../../utils/configuration";
+import {saveDateForRequestTable} from "./appAction";
 
 export const SAVE_ALL_RECORDS_TO_STORE = "SAVE_ALL_RECORDS_TO_STORE";
 export const REMOVE_ALL_RECORDS_FROM_STORE = "REMOVE_ALL_RECORDS_FROM_STORE";
@@ -32,10 +33,8 @@ export function deleteRecordAction(id,callBack) {
             if (!response.ok) {
                 alert("not ok-200 =deleteRecordAction  " + response.status + " " + response.statusText)
             }
-            let result = await response.json();
+            // let result = await response.json();
             dispatch(callBack(getState().app.dataForRequest))
-            // dispatch(fetchAllRecordsByDay({date:result.date}))
-
 
         } catch (e) {
             // ------------------------- TO DO-----------------------
@@ -61,8 +60,8 @@ export function fetchAllRecordsByDay(date) {
                 alert("not ok-200 =getAllRecordsByDay  " + response.status + " " + response.statusText)
             }
             let result = await response.json();
+            dispatch(saveDateForRequestTable(date))
             dispatch(saveAllRecords(result));
-            console.log("ggg")
         } catch (e) {
             // ------------------------- TO DO-----------------------
             console.log("catch getAllRecordsByDay", e.message)
@@ -87,17 +86,14 @@ export function editRecordAction(record,callBackDispatch) {
                     finish:record.finish?record.finish:null
                 })
             }
+            console.log("===")
+            console.log(record)
             let response = await fetch(URI_EDIT_RECORD, settings)
             if (!response.ok) {
                 alert("not ok-200 =editRecordAction  " + response.status + " " + response.statusText)
             }
-            let result = await response.json();
-            console.log(callBackDispatch)
-            console.log(record)
-            console.log(getState().app.dataForRequest)
+            // let result = await response.json();
             dispatch(callBackDispatch(getState().app.dataForRequest))
-                   // dispatch(callBackDispatch(getState().app.dataForRequest))
-                // dispatch(fetchAllRecordsByDay({date:result.date}))?????
 
         } catch (e) {
             // ------------------------- TO DO-----------------------

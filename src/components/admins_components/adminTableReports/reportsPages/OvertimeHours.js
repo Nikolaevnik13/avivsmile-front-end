@@ -10,16 +10,14 @@ import {connect} from "react-redux";
 
 const OvertimeHours = (props) => {
 
-    let seconds=props.overtimeHours;
-    let hour=0;
-    let minutes=0;
+    let seconds = props.overtimeHours;
+    let hour = 0;
+    let minutes = 0;
 
-    if(seconds){
-        seconds*=60;
-        seconds = seconds % (24 * 3600);
+    if (seconds) {
+        seconds *= 60;
         hour = Math.floor(seconds / 3600);
         minutes = Math.floor((seconds %= 3600) / 60);
-        console.log(hour)
     }
 
     useEffect(() => {
@@ -34,10 +32,26 @@ const OvertimeHours = (props) => {
         }
     }, [])
 
+    function getName() {
+        let user = props.employees.filter((empl) => empl.idUser == props.params.idUser);
+        return user[0].firstName + " " + user[0].lastName;
+    }
+
     return (
-        <div className="container">
+        <div className="container mt-5">
             <div className="row">
-                <h1>his worked hours in range which you piked is hours: {hour} minutes: {minutes}</h1>
+                <div className="col-12 text-center">
+                    <p>In range which you piked overtime hours of <b>{getName()}</b> is</p>
+                </div>
+                <div className="col-12 text-center">
+                    <p>Hours: <b>{hour}</b></p>
+                </div>
+                <div className="col-12 text-center">
+                    <p>Minutes: <b>{minutes}</b></p>
+                </div>
+                <div className="col-12 text-center">
+                    <p>Put attention these hours includes in common number work hours.</p>
+                </div>
             </div>
         </div>
     )
@@ -45,7 +59,8 @@ const OvertimeHours = (props) => {
 const mapStateToProps = state => {
     return {
         overtimeHours: state.app.overtimeHours,
-        params: state.app.dataForRequest
+        params: state.app.dataForRequest,
+        employees: state.app.employees
     }
 }
 const mapDispatchToProps = {

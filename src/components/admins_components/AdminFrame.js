@@ -6,7 +6,7 @@ import AdminFooter from "./AdminFooter";
 
 
 const AdminFrame = () => {
-    return <div >
+    return <div className="frame m-0 p-0" >
         <Header/>
         <AdminMenu/>
         <AdminSwitcher/>

@@ -1,10 +1,10 @@
 import React, {useEffect, useState} from "react";
 import {connect} from "react-redux";
 import {fetchAllRecordsByDay} from "../../../redux/actions/tableAction";
-import TableRow from "./TableRow";
+import RowTable from "./RowTable";
 
 const FrameTable = (props) => {
-    const [recordsToRender,setRecordsToRender]=useState(props.records)
+    const [recordsToRender, setRecordsToRender] = useState(props.records)
     const [date, setDate] = useState({});
 
     const handlerInputDate = (event) => {
@@ -16,19 +16,18 @@ const FrameTable = (props) => {
         props.fetchAllRecordsByDay(date);
     }
 
-    useEffect(()=>{
+    useEffect(() => {
         setRecordsToRender(props.records)
-        },[props.records])
+    }, [props.records])
 
     return (
-
         <div className="container mt-5">
             <div className="row">
                 <div className="col">
                     <form className="form-group"
                           onSubmit={handlerSubmit}
                     >
-                        <h3>All records for</h3>
+                        <h3>All records by</h3>
                         <label>Date:</label>
                         <input type="date"
                                name="date"
@@ -38,21 +37,22 @@ const FrameTable = (props) => {
                                onChange={handlerInputDate}
                                className="form-control"/>
                         <button type="submit"
-                                className="btn btn-primary mt-2">Submit
+                                className="btn button-submit mt-2">Submit
                         </button>
                     </form>
-                    <div className="col">
+                    <div className="col mt-5">
                         <table className="table">
                             <thead>
                             <tr>
-                                <th scope="col">Name1</th>
+                                <th scope="col">Name</th>
+                                <th scope="col">Date</th>
                                 <th scope="col">Start</th>
                                 <th scope="col">End</th>
                                 <th scope="col">hours</th>
                             </tr>
                             </thead>
                             <tbody>
-                            {recordsToRender.map(item=> <TableRow user={item} key={item.id}/>)}
+                            {recordsToRender.map(item => <RowTable user={item} key={item.id}/>)}
                             </tbody>
                         </table>
                     </div>
@@ -60,14 +60,15 @@ const FrameTable = (props) => {
             </div>
         </div>
     )
-
 }
+
 const mapDispatchToProps = {
     fetchAllRecordsByDay
 }
+
 const mapStateToProps = state => {
     return {
         records: state.tableData.records
     }
 }
-export default connect(mapStateToProps,mapDispatchToProps)( FrameTable);
+export default connect(mapStateToProps, mapDispatchToProps)(FrameTable);

@@ -1,15 +1,13 @@
 import {
-    CHANGE_FLAG_LOGIN,
-    FETCH_ALL_RECORDS,
+    CHANGE_FLAG_LOGIN, CLOSE_ALERT_IN_STORE,
     REMOVE_DATE_FOR_REQUEST_TABLE,
-    REMOVE_USERS_FROM_STORE,
+    REMOVE_USERS_FROM_STORE, SAVE_ALERT_TO_STORE,
     SAVE_DATE_FOR_REQUEST_TABLE, SAVE_NUM_WORK_DAY, SAVE_OVERTIME_HOURS, SAVE_RECORDS_TO_ARRAY,
-    SAVE_USERS_TO_STORE, SAVE_WORK_HOURS,
+    SAVE_USERS_TO_STORE, SAVE_WORK_HOURS, SHOW_ALERT_IN_STORE, SWITCHER_PAGE_REPORTS,
     VIEW_PAGE,
     VIEW_PAGE_SUB_ADMIN,
     VIEW_PAGE_TABLES_SWITCH
 } from "../actions/appAction";
-import {act} from "@testing-library/react";
 
 
 const initialState = {
@@ -22,9 +20,11 @@ const initialState = {
     workDays: 0,
     workHours: 0,
     overtimeHours: 0,
-    arrayRecords: []
-    // ,
-    // allUsersDB:[]
+    arrayRecords: [],
+    switcherReports: "",
+    alert: "",
+    show: false
+
 };
 
 
@@ -32,11 +32,19 @@ export const appReducer = (state = initialState, action) => {
 
     switch (action.type) {
 
+        case SHOW_ALERT_IN_STORE:
+            return {...state, show: true}
+
+        case CLOSE_ALERT_IN_STORE:
+            return {...state,show: false}
+
+        case SAVE_ALERT_TO_STORE:
+            return {...state, alert: action.payload}
+
         case VIEW_PAGE:
             return {...state, page: action.payload};
 
         case SAVE_USERS_TO_STORE:
-
             return {...state, employees: action.payload}
 
         case VIEW_PAGE_SUB_ADMIN:
@@ -68,6 +76,9 @@ export const appReducer = (state = initialState, action) => {
 
         case SAVE_RECORDS_TO_ARRAY:
             return {...state, arrayRecords: action.payload}
+
+        case SWITCHER_PAGE_REPORTS:
+            return {...state, switcherReports: action.payload}
 
 
         default:

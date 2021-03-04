@@ -2,62 +2,49 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d0567cc5-bc2e-4508-8e4c-b7d73c250644" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Button.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Card.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Cards.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Choice.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Menu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/admins_components/AdminFooter.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/admins_components/AdminFrame.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/admins_components/AdminMenu.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/admins_components/AdminSwitcher.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/AllRecordsByDay.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/FrameTable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/FrameTablesReports.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/ReportsPerEmployee.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/ReportsSwitcher.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/TableRow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/TablesRowForReports.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/reportsPages/FrameRecordTable.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/reportsPages/OvertimeHours.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/reportsPages/TableRecordRow.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/reportsPages/WorkDays.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/reportsPages/WorkHours.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/admins_components/forms/FormAddEmployee.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/admins_components/forms/FormAddRoleEmployee.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/admins_components/forms/FormDeleteEmployee.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/admins_components/forms/FormDeleteRoleEmployee.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/admins_components/forms/FormEditEmployee.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/components.module.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/h.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/logoaviv.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/images/logoaviv2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/actions/appAction.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/actions/manageEmployeeAction.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/actions/tableAction.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/actions/userAction.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/index.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/reducers/appReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/reducers/rootReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/reducers/tableReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/redux/reducers/userReducer.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/configuration.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/utils/util.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/NotoSerif/NotoSerif-Bold.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/NotoSerif/NotoSerif-BoldItalic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/NotoSerif/NotoSerif-Italic.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/fonts/NotoSerif/NotoSerif-Regular.ttf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/images/teeth_background.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/public/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.css" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Button.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Button.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Card.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Card.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Cards.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Cards.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Choice.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Choice.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Header.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Header.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Menu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Menu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/admins_components/AdminFooter.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admins_components/AdminFooter.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/admins_components/AdminFrame.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admins_components/AdminFrame.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/admins_components/AdminMenu.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admins_components/AdminMenu.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/admins_components/AdminSwitcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admins_components/AdminSwitcher.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/FrameTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/FrameTable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/FrameTablesReports.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/FrameTablesReports.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/ReportsPerEmployee.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/ReportsPerEmployee.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/ReportsSwitcher.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/ReportsSwitcher.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/TableRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/RowTable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/TablesRowForReports.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/RowTablesReports.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/reportsPages/FrameRecordTable.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/reportsPages/FrameRecordTable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/reportsPages/OvertimeHours.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/reportsPages/OvertimeHours.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/reportsPages/TableRecordRow.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/reportsPages/RowRecordTable.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/reportsPages/WorkDays.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/reportsPages/WorkDays.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/reportsPages/WorkHours.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admins_components/adminTableReports/reportsPages/WorkHours.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/admins_components/forms/FormAddEmployee.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admins_components/forms/FormAddEmployee.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/admins_components/forms/FormAddRoleEmployee.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admins_components/forms/FormAddRoleEmployee.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/admins_components/forms/FormDeleteEmployee.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admins_components/forms/FormDeleteEmployee.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/admins_components/forms/FormDeleteRoleEmployee.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admins_components/forms/FormDeleteRoleEmployee.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/admins_components/forms/FormEditEmployee.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/admins_components/forms/FormEditEmployee.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/components.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/components.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/images/logoaviv.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/images/logoaviv.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/logo.svg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/actions/appAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/appAction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/actions/manageEmployeeAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/manageEmployeeAction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/actions/tableAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/tableAction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/actions/userAction.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/actions/userAction.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/appReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/appReducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/reducers/userReducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/reducers/userReducer.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -74,6 +61,11 @@
     </option>
   </component>
   <component name="Git.Settings">
+    <option name="PREVIOUS_COMMIT_AUTHORS">
+      <list>
+        <option value="Nikita Nikolaev &lt;nikolaevnik13@gmail.com&gt;" />
+      </list>
+    </option>
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="JsFlowSettings">
@@ -108,12 +100,15 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/images" />
+      <recent name="$PROJECT_DIR$/src/fonts" />
+      <recent name="$PROJECT_DIR$/src/fonts/NotoSerif" />
       <recent name="$PROJECT_DIR$/src/components/admins_components/forms" />
       <recent name="$PROJECT_DIR$/src/components/admins_components" />
-      <recent name="$PROJECT_DIR$/src/images" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/images" />
+      <recent name="$PROJECT_DIR$/src/fonts" />
     </key>
   </component>
   <component name="RunManager" selected="npm.npm start">
@@ -176,12 +171,36 @@
       <workItem from="1610285688007" duration="11355000" />
       <workItem from="1610354700063" duration="43005000" />
       <workItem from="1610550837581" duration="4239000" />
-      <workItem from="1610614120299" duration="7976000" />
+      <workItem from="1610614120299" duration="33550000" />
+      <workItem from="1610726350841" duration="158000" />
+      <workItem from="1610788386471" duration="280000" />
+      <workItem from="1610969660547" duration="2368000" />
+      <workItem from="1610981011955" duration="18256000" />
+      <workItem from="1611242858293" duration="2066000" />
+      <workItem from="1611928118671" duration="4149000" />
+      <workItem from="1611946147981" duration="16108000" />
+      <workItem from="1612028200838" duration="4555000" />
+      <workItem from="1613042943619" duration="36307000" />
+      <workItem from="1613841274276" duration="351000" />
     </task>
+    <task id="LOCAL-00001" summary="before fix">
+      <created>1610623064967</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1610623064967</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
+    <MESSAGE value="before fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="before fix" />
   </component>
   <component name="WindowStateProjectService">
     <state x="217" y="225" key="#ESLint" timestamp="1608830969637">
@@ -189,70 +208,86 @@
     </state>
     <state x="217" y="224" key="#ESLint/0.23.2048.1067@0.23.2048.1067" timestamp="1608125671835" />
     <state x="217" y="225" key="#ESLint/0.23.2048.1073@0.23.2048.1073" timestamp="1608830969637" />
-    <state x="324" y="367" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1608117423556">
+    <state x="324" y="367" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1610715953909">
       <screen x="0" y="23" width="2048" height="1068" />
     </state>
-    <state x="324" y="367" key="#com.intellij.fileTypes.FileTypeChooser/0.23.2048.1068@0.23.2048.1068" timestamp="1608117423556" />
-    <state x="355" y="313" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1609416683401">
-      <screen x="0" y="23" width="2048" height="1074" />
+    <state x="324" y="367" key="#com.intellij.fileTypes.FileTypeChooser/0.23.2048.1068@0.23.2048.1068" timestamp="1610715953909" />
+    <state x="355" y="313" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1611948603821">
+      <screen x="0" y="23" width="2048" height="1075" />
     </state>
     <state x="355" y="311" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.2048.1067@0.23.2048.1067" timestamp="1608121623669" />
     <state x="355" y="313" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.2048.1074@0.23.2048.1074" timestamp="1609416683401" />
+    <state x="355" y="313" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.23.2048.1075@0.23.2048.1075" timestamp="1611948603821" />
+    <state x="264" y="160" key="CommitChangelistDialog2" timestamp="1610623064573">
+      <screen x="0" y="23" width="2048" height="1073" />
+    </state>
+    <state x="264" y="160" key="CommitChangelistDialog2/0.23.2048.1073@0.23.2048.1073" timestamp="1610623064573" />
     <state x="503" y="460" width="663" height="190" key="Github.ShareDialog" timestamp="1610550875528">
       <screen x="0" y="23" width="2048" height="1067" />
     </state>
     <state x="503" y="460" width="663" height="190" key="Github.ShareDialog/0.23.2048.1067@0.23.2048.1067" timestamp="1610550875528" />
-    <state width="1256" height="166" key="GridCell.Tab.0.bottom" timestamp="1610565308333">
-      <screen x="0" y="23" width="2048" height="1074" />
-    </state>
-    <state width="1044" height="166" key="GridCell.Tab.0.bottom/0.23.2048.1066@0.23.2048.1066" timestamp="1609261053719" />
-    <state width="1139" height="166" key="GridCell.Tab.0.bottom/0.23.2048.1067@0.23.2048.1067" timestamp="1608903760122" />
-    <state width="1256" height="166" key="GridCell.Tab.0.bottom/0.23.2048.1068@0.23.2048.1068" timestamp="1610549498235" />
-    <state width="1256" height="166" key="GridCell.Tab.0.bottom/0.23.2048.1073@0.23.2048.1073" timestamp="1610472296745" />
-    <state width="1256" height="166" key="GridCell.Tab.0.bottom/0.23.2048.1074@0.23.2048.1074" timestamp="1610565308333" />
-    <state width="1219" height="166" key="GridCell.Tab.0.bottom/0.23.2048.1075@0.23.2048.1075" timestamp="1610287947430" />
-    <state width="1219" height="166" key="GridCell.Tab.0.bottom/0.23.2048.1076@0.23.2048.1076" timestamp="1610279864749" />
-    <state width="1256" height="166" key="GridCell.Tab.0.center" timestamp="1610565308332">
-      <screen x="0" y="23" width="2048" height="1074" />
-    </state>
-    <state width="1044" height="166" key="GridCell.Tab.0.center/0.23.2048.1066@0.23.2048.1066" timestamp="1609261053718" />
-    <state width="1139" height="166" key="GridCell.Tab.0.center/0.23.2048.1067@0.23.2048.1067" timestamp="1608903760119" />
-    <state width="1256" height="166" key="GridCell.Tab.0.center/0.23.2048.1068@0.23.2048.1068" timestamp="1610549498234" />
-    <state width="1256" height="166" key="GridCell.Tab.0.center/0.23.2048.1073@0.23.2048.1073" timestamp="1610472296744" />
-    <state width="1256" height="166" key="GridCell.Tab.0.center/0.23.2048.1074@0.23.2048.1074" timestamp="1610565308332" />
-    <state width="1219" height="166" key="GridCell.Tab.0.center/0.23.2048.1075@0.23.2048.1075" timestamp="1610287947429" />
-    <state width="1219" height="166" key="GridCell.Tab.0.center/0.23.2048.1076@0.23.2048.1076" timestamp="1610279864749" />
-    <state width="1256" height="166" key="GridCell.Tab.0.left" timestamp="1610565308331">
-      <screen x="0" y="23" width="2048" height="1074" />
-    </state>
-    <state width="1044" height="166" key="GridCell.Tab.0.left/0.23.2048.1066@0.23.2048.1066" timestamp="1609261053715" />
-    <state width="1139" height="166" key="GridCell.Tab.0.left/0.23.2048.1067@0.23.2048.1067" timestamp="1608903760117" />
-    <state width="1256" height="166" key="GridCell.Tab.0.left/0.23.2048.1068@0.23.2048.1068" timestamp="1610549498234" />
-    <state width="1256" height="166" key="GridCell.Tab.0.left/0.23.2048.1073@0.23.2048.1073" timestamp="1610472296742" />
-    <state width="1256" height="166" key="GridCell.Tab.0.left/0.23.2048.1074@0.23.2048.1074" timestamp="1610565308331" />
-    <state width="1219" height="166" key="GridCell.Tab.0.left/0.23.2048.1075@0.23.2048.1075" timestamp="1610287947428" />
-    <state width="1219" height="166" key="GridCell.Tab.0.left/0.23.2048.1076@0.23.2048.1076" timestamp="1610279864748" />
-    <state width="1256" height="166" key="GridCell.Tab.0.right" timestamp="1610565308333">
-      <screen x="0" y="23" width="2048" height="1074" />
-    </state>
-    <state width="1044" height="166" key="GridCell.Tab.0.right/0.23.2048.1066@0.23.2048.1066" timestamp="1609261053719" />
-    <state width="1139" height="166" key="GridCell.Tab.0.right/0.23.2048.1067@0.23.2048.1067" timestamp="1608903760121" />
-    <state width="1256" height="166" key="GridCell.Tab.0.right/0.23.2048.1068@0.23.2048.1068" timestamp="1610549498235" />
-    <state width="1256" height="166" key="GridCell.Tab.0.right/0.23.2048.1073@0.23.2048.1073" timestamp="1610472296745" />
-    <state width="1256" height="166" key="GridCell.Tab.0.right/0.23.2048.1074@0.23.2048.1074" timestamp="1610565308332" />
-    <state width="1219" height="166" key="GridCell.Tab.0.right/0.23.2048.1075@0.23.2048.1075" timestamp="1610287947429" />
-    <state width="1219" height="166" key="GridCell.Tab.0.right/0.23.2048.1076@0.23.2048.1076" timestamp="1610279864749" />
-    <state x="1149" y="23" width="884" height="1074" key="dock-window-1" timestamp="1609416276083">
+    <state width="1177" height="166" key="GridCell.Tab.0.bottom" timestamp="1613300617848">
       <screen x="0" y="23" width="2048" height="1075" />
     </state>
-    <state x="1149" y="23" width="884" height="1074" key="dock-window-1/0.23.2048.1075@0.23.2048.1075" timestamp="1609416276083" />
-    <state x="1153" y="23" width="883" height="1067" key="dock-window-2" timestamp="1609416276084">
+    <state width="1516" height="166" key="GridCell.Tab.0.bottom/0.23.2048.1066@0.23.2048.1066" timestamp="1610725575291" />
+    <state width="1003" height="166" key="GridCell.Tab.0.bottom/0.23.2048.1067@0.23.2048.1067" timestamp="1610789212485" />
+    <state width="1516" height="166" key="GridCell.Tab.0.bottom/0.23.2048.1068@0.23.2048.1068" timestamp="1610710907061" />
+    <state width="1003" height="166" key="GridCell.Tab.0.bottom/0.23.2048.1073@0.23.2048.1073" timestamp="1610726680556" />
+    <state width="1125" height="166" key="GridCell.Tab.0.bottom/0.23.2048.1074@0.23.2048.1074" timestamp="1611928268927" />
+    <state width="1177" height="166" key="GridCell.Tab.0.bottom/0.23.2048.1075@0.23.2048.1075" timestamp="1613300617848" />
+    <state width="1177" height="166" key="GridCell.Tab.0.bottom/0.23.2048.1076@0.23.2048.1076" timestamp="1613208084357" />
+    <state width="1177" height="166" key="GridCell.Tab.0.center" timestamp="1613300617847">
       <screen x="0" y="23" width="2048" height="1075" />
+    </state>
+    <state width="1516" height="166" key="GridCell.Tab.0.center/0.23.2048.1066@0.23.2048.1066" timestamp="1610725575290" />
+    <state width="1003" height="166" key="GridCell.Tab.0.center/0.23.2048.1067@0.23.2048.1067" timestamp="1610789212484" />
+    <state width="1516" height="166" key="GridCell.Tab.0.center/0.23.2048.1068@0.23.2048.1068" timestamp="1610710907059" />
+    <state width="1003" height="166" key="GridCell.Tab.0.center/0.23.2048.1073@0.23.2048.1073" timestamp="1610726680556" />
+    <state width="1125" height="166" key="GridCell.Tab.0.center/0.23.2048.1074@0.23.2048.1074" timestamp="1611928268927" />
+    <state width="1177" height="166" key="GridCell.Tab.0.center/0.23.2048.1075@0.23.2048.1075" timestamp="1613300617847" />
+    <state width="1177" height="166" key="GridCell.Tab.0.center/0.23.2048.1076@0.23.2048.1076" timestamp="1613208084354" />
+    <state width="1177" height="166" key="GridCell.Tab.0.left" timestamp="1613300617846">
+      <screen x="0" y="23" width="2048" height="1075" />
+    </state>
+    <state width="1516" height="166" key="GridCell.Tab.0.left/0.23.2048.1066@0.23.2048.1066" timestamp="1610725575289" />
+    <state width="1003" height="166" key="GridCell.Tab.0.left/0.23.2048.1067@0.23.2048.1067" timestamp="1610789212483" />
+    <state width="1516" height="166" key="GridCell.Tab.0.left/0.23.2048.1068@0.23.2048.1068" timestamp="1610710907059" />
+    <state width="1003" height="166" key="GridCell.Tab.0.left/0.23.2048.1073@0.23.2048.1073" timestamp="1610726680555" />
+    <state width="1125" height="166" key="GridCell.Tab.0.left/0.23.2048.1074@0.23.2048.1074" timestamp="1611928268925" />
+    <state width="1177" height="166" key="GridCell.Tab.0.left/0.23.2048.1075@0.23.2048.1075" timestamp="1613300617846" />
+    <state width="1177" height="166" key="GridCell.Tab.0.left/0.23.2048.1076@0.23.2048.1076" timestamp="1613208084349" />
+    <state width="1177" height="166" key="GridCell.Tab.0.right" timestamp="1613300617847">
+      <screen x="0" y="23" width="2048" height="1075" />
+    </state>
+    <state width="1516" height="166" key="GridCell.Tab.0.right/0.23.2048.1066@0.23.2048.1066" timestamp="1610725575290" />
+    <state width="1003" height="166" key="GridCell.Tab.0.right/0.23.2048.1067@0.23.2048.1067" timestamp="1610789212484" />
+    <state width="1516" height="166" key="GridCell.Tab.0.right/0.23.2048.1068@0.23.2048.1068" timestamp="1610710907060" />
+    <state width="1003" height="166" key="GridCell.Tab.0.right/0.23.2048.1073@0.23.2048.1073" timestamp="1610726680556" />
+    <state width="1125" height="166" key="GridCell.Tab.0.right/0.23.2048.1074@0.23.2048.1074" timestamp="1611928268927" />
+    <state width="1177" height="166" key="GridCell.Tab.0.right/0.23.2048.1075@0.23.2048.1075" timestamp="1613300617847" />
+    <state width="1177" height="166" key="GridCell.Tab.0.right/0.23.2048.1076@0.23.2048.1076" timestamp="1613208084355" />
+    <state x="282" y="297" key="Vcs.Push.Dialog.v2" timestamp="1610623068239">
+      <screen x="0" y="23" width="2048" height="1073" />
+    </state>
+    <state x="282" y="297" key="Vcs.Push.Dialog.v2/0.23.2048.1073@0.23.2048.1073" timestamp="1610623068239" />
+    <state x="1139" y="25" width="909" height="1045" key="dock-window-1" timestamp="1613131988198">
+      <screen x="0" y="23" width="2048" height="1075" />
+    </state>
+    <state x="1139" y="25" width="909" height="1045" key="dock-window-1/0.23.2048.1075@0.23.2048.1075" timestamp="1613131988198" />
+    <state x="1190" y="612" width="839" height="475" key="dock-window-1/0.23.2048.1076@0.23.2048.1076" timestamp="1612028254931" />
+    <state x="1130" y="25" width="909" height="1033" key="dock-window-2" timestamp="1613220667281">
+      <screen x="0" y="23" width="2048" height="1076" />
     </state>
     <state x="1153" y="23" width="883" height="1067" key="dock-window-2/0.23.2048.1075@0.23.2048.1075" timestamp="1609416276084" />
-    <state x="1213" y="46" width="852" height="851" key="dock-window-3" timestamp="1609416276084">
-      <screen x="0" y="23" width="2048" height="1075" />
+    <state x="1130" y="25" width="909" height="1033" key="dock-window-2/0.23.2048.1076@0.23.2048.1076" timestamp="1613220667281" />
+    <state x="1057" y="23" width="975" height="1075" key="dock-window-3" timestamp="1613222374363">
+      <screen x="0" y="23" width="2048" height="1076" />
     </state>
     <state x="1213" y="46" width="852" height="851" key="dock-window-3/0.23.2048.1075@0.23.2048.1075" timestamp="1609416276084" />
+    <state x="1057" y="23" width="975" height="1075" key="dock-window-3/0.23.2048.1076@0.23.2048.1076" timestamp="1613222374363" />
+    <state x="1111" y="23" width="876" height="851" key="dock-window-4" timestamp="1613244055500">
+      <screen x="0" y="23" width="2048" height="1076" />
+    </state>
+    <state x="1111" y="23" width="876" height="851" key="dock-window-4/0.23.2048.1076@0.23.2048.1076" timestamp="1613244055500" />
   </component>
 </project>

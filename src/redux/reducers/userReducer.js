@@ -1,4 +1,3 @@
-
 import {REMOVE_USER_FROM_STORE, SAVE_USER_TO_STORE} from "../actions/userAction";
 
 const initialState = {

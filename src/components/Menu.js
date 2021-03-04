@@ -6,34 +6,31 @@ import {connect} from "react-redux";
 
 const Menu = (props) => {
 
-
-
     return (
         <div>
             <Header/>
-            <div className="container mt-5">
+            <div className="container mt-5 pt-5">
                 <div className="row align-items-center justify-content-center">
 
                     <div className="col-6">
                         <button
                             onClick={() => props.getEmployeesAction(false)}
                             type="button"
-                            className="btn btn-lg btn-outline-secondary mb-3">Employee
+                            className="btn btn-lg btn-outline-secondary mb-3 btn-employee">Employee
                         </button>
                     </div>
                     <div className="col-6">
                         <button type="button"
                                 onClick={() => props.getEmployeesAction(true)}
-                                className="btn btn-lg btn-outline-primary mb-3 ">Administrator
+                                className="btn btn-lg  mb-3 btn-administrator">Administrator
                         </button>
                     </div>
                 </div>
             </div>
         </div>
-
-
     )
 }
+
 const mapDispatchToProps = {
     getEmployeesAction
 }
